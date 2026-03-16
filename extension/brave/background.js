@@ -1,4 +1,4 @@
-// background.js - SESSION ISOLATED SCRAPER v3.2 (FIXED)
+// background.js - SESSION ISOLATED SCRAPER v3.3 (WEBSOCKET DEEP CAPTURE)
 const BROWSER = 'brave';
 let nativePort = null;
 let reconnectAttempts = 0;
@@ -9,6 +9,126 @@ const pendingRequests = new Map();
 const siteContexts    = new Map();
 const tabContexts     = new Map();
 
+// ── WebSocket connection registry ─────────────────────────────────────────────
+// Full lifecycle: created → handshake → frames → closed
+const wsConnections = new Map(); // requestId → WSConnection
+
+function makeWSConnection(requestId, url, tabId, domain) {
+  return {
+    requestId,
+    url,
+    tabId,
+    domain,
+    createdAt:    Date.now(),
+    closedAt:     null,
+    frameCount:   { sent: 0, recv: 0 },
+    byteCount:    { sent: 0, recv: 0 },
+    frames:       [],           // last N frames kept in memory
+    MAX_FRAMES:   200,
+    patterns:     new Set(),    // interesting patterns found
+  };
+}
+
+function wsAddFrame(conn, direction, payload, opcode) {
+  const frame = {
+    direction,
+    payload,
+    opcode,         // 1=text, 2=binary, 8=close, 9=ping, 10=pong
+    timestamp: Date.now(),
+    size:      typeof payload === 'string' ? payload.length : 0,
+    parsed:    null,
+    flags:     [],
+  };
+
+  // ── Try to parse payload ──────────────────────────────────────────────────
+  if (opcode === 1 || opcode === undefined) {
+    // TEXT frame — try JSON
+    try {
+      frame.parsed = JSON.parse(payload);
+    } catch {
+      // Not JSON — try to find JSON embedded in the string
+      const m = payload.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
+      if (m) {
+        try { frame.parsed = JSON.parse(m[0]); } catch {}
+      }
+    }
+  } else if (opcode === 2) {
+    // BINARY frame — try to detect encoding
+    frame.flags.push('BINARY');
+    // payloadData from CDP is base64 for binary
+    try {
+      const decoded = atob ? atob(payload) : Buffer.from(payload, 'base64').toString('binary');
+      // Try JSON from decoded binary
+      try {
+        frame.parsed = JSON.parse(decoded);
+        frame.flags.push('BINARY_JSON');
+      } catch {
+        // Check for MessagePack magic bytes or protobuf
+        const bytes = decoded.split('').map(c => c.charCodeAt(0));
+        if (bytes[0] === 0x82 || bytes[0] === 0x83 || bytes[0] === 0x84) frame.flags.push('MSGPACK');
+        else frame.flags.push('PROTOBUF_OR_CUSTOM');
+      }
+    } catch {}
+  }
+
+  // ── Pattern detection (works on both parsed and raw) ─────────────────────
+  const searchTarget = frame.parsed
+    ? JSON.stringify(frame.parsed)
+    : (typeof payload === 'string' ? payload : '');
+
+  const PATTERNS = {
+    CRASH_POINT:   /crash[\s_-]?point|crashPoint|bust|busted/i,
+    MULTIPLIER:    /multiplier|multi|\"x\":\s*[\d.]+|\"m\":\s*[\d.]+/i,
+    GAME_STATE:    /gameState|game_state|status.*running|status.*crashed/i,
+    ROUND_ID:      /round[\s_-]?id|roundId|game[\s_-]?id|gameId/i,
+    HASH:          /hash|seed|serverSeed/i,
+    CASHOUT:       /cashout|cash_out|escape/i,
+    BALANCE:       /balance|wallet|credit/i,
+    BET:           /bet|wager|stake|amount/i,
+    PLAYER_DATA:   /player|user[\s_-]?id|userId|seat/i,
+    RESULT:        /result|outcome|winner/i,
+    PAYOUT:        /payout|win|profit/i,
+    HEARTBEAT:     /ping|pong|heartbeat|keepalive/i,
+  };
+
+  for (const [name, rx] of Object.entries(PATTERNS)) {
+    if (rx.test(searchTarget)) {
+      frame.flags.push(name);
+      conn.patterns.add(name);
+    }
+  }
+
+  // Extract numeric multiplier values if present
+  if (frame.parsed) {
+    const multiplierKeys = ['multiplier', 'x', 'm', 'rate', 'odds', 'crashPoint', 'bustAt', 'value'];
+    frame.extractedValues = {};
+    const scan = (obj, depth = 0) => {
+      if (depth > 5 || !obj || typeof obj !== 'object') return;
+      for (const [k, v] of Object.entries(obj)) {
+        if (multiplierKeys.some(mk => k.toLowerCase().includes(mk))) {
+          const n = parseFloat(v);
+          if (!isNaN(n) && n >= 1.0 && n <= 10000) {
+            frame.extractedValues[k] = n;
+          }
+        }
+        if (typeof v === 'object') scan(v, depth + 1);
+      }
+    };
+    scan(frame.parsed);
+    if (Object.keys(frame.extractedValues).length > 0) frame.flags.push('HAS_NUMBERS');
+  }
+
+  // Update connection stats
+  conn.frameCount[direction]++;
+  conn.byteCount[direction] += frame.size;
+
+  // Keep ring buffer
+  conn.frames.push(frame);
+  if (conn.frames.length > conn.MAX_FRAMES) conn.frames.shift();
+
+  return frame;
+}
+
 // ── Per-tab stats (for popup) ─────────────────────────────────────────────────
 const tabStats = new Map();
 
@@ -16,6 +136,7 @@ function getTabStats(tabId) {
   if (!tabStats.has(tabId)) {
     tabStats.set(tabId, {
       requests: 0, tokens: 0, authCookies: 0, websockets: 0,
+      wsFrames: 0,
       events: []
     });
   }
@@ -27,7 +148,8 @@ function recordTabEvent(tabId, event) {
   const s = getTabStats(tabId);
   if (event.type === "request")     s.requests++;
   if (event.type === "auth_cookie") s.authCookies++;
-  if (event.type === "websocket")   s.websockets++;
+  if (event.type === "websocket")   { s.websockets++; s.wsFrames++; }
+  if (event.type === "websocket_opened") s.websockets++;
   if (event.type === "response_body") {
     const auth = event.reqHeaders?.authorization || event.reqHeaders?.Authorization || "";
     if (auth.toLowerCase().startsWith("bearer ")) s.tokens++;
@@ -36,7 +158,7 @@ function recordTabEvent(tabId, event) {
   if (s.events.length > 100) s.events.length = 100;
 }
 
-console.log('🦁 Scraper Starting...');
+console.log('🦁 Scraper v3.3 Starting...');
 
 function send(obj) {
   if (nativePort) {
@@ -287,12 +409,22 @@ function attachDebugger(tabId) {
     const evt = { type: 'debugger_status', status: 'attached', tabId, timestamp: Date.now() };
     send(evt);
     recordTabEvent(tabId, evt);
+
     chrome.debugger.sendCommand({ tabId }, 'Network.enable', {
-      maxTotalBufferSize: 10000000, maxResourceBufferSize: 5000000
+      maxTotalBufferSize:    10000000,
+      maxResourceBufferSize: 5000000
     });
+    // ← ADD THIS — attach to iframes/workers automatically
+    chrome.debugger.sendCommand({ tabId }, 'Target.setAutoAttach', {
+      autoAttach:             true,
+      waitForDebuggerOnStart: false,
+      flatten:                true,   // critical — makes iframe events come through same onEvent
+    });
+
     chrome.debugger.sendCommand({ tabId }, 'Fetch.enable', {
       patterns: [{ urlPattern: '*', requestStage: 'Response' }]
     });
+
     console.log('🔬 Debugger attached to tab', tabId);
   });
 }
@@ -303,6 +435,10 @@ function detachDebugger(tabId) {
     debuggedTabs.delete(tabId);
     tabContexts.delete(tabId);
     pendingRequests.forEach((v, k) => { if (v.tabId === tabId) pendingRequests.delete(k); });
+    // Clean up WS connections for this tab
+    wsConnections.forEach((conn, id) => {
+      if (conn.tabId === tabId) wsConnections.delete(id);
+    });
     send({ type: 'debugger_status', status: 'detached', tabId, timestamp: Date.now() });
   });
 }
@@ -324,6 +460,7 @@ chrome.debugger.onEvent.addListener((source, method, params) => {
   const tabId  = source.tabId;
   const domain = tabContexts.get(tabId) || 'unknown';
 
+  // ── HTTP request/response (unchanged) ─────────────────────────────────────
   if (method === 'Network.requestWillBeSent') {
     const req = params.request;
     pendingRequests.set(params.requestId, {
@@ -399,17 +536,169 @@ chrome.debugger.onEvent.addListener((source, method, params) => {
     }
   }
 
-  else if (method === 'Network.webSocketFrameReceived') {
-    const evt = { type: 'websocket', direction: 'recv', domain, tabId,
-                  payload: params.response.payloadData, timestamp: Date.now() };
+  // ══════════════════════════════════════════════════════════════════════════
+  // ── WebSocket FULL lifecycle capture ──────────────────────────────────────
+  // ══════════════════════════════════════════════════════════════════════════
+
+  else if (method === 'Network.webSocketCreated') {
+    // New WS connection opened
+    const conn = makeWSConnection(params.requestId, params.url, tabId, domain);
+    wsConnections.set(params.requestId, conn);
+
+    const evt = {
+      type:       'websocket_opened',
+      requestId:  params.requestId,
+      url:        params.url,
+      domain,
+      tabId,
+      timestamp:  Date.now(),
+      initiator:  params.initiator || null,
+    };
+    send(evt);
+    recordTabEvent(tabId, evt);
+    console.log(`🔌 WS opened: ${params.url} (tab ${tabId})`);
+  }
+
+  else if (method === 'Network.webSocketHandshakeResponseReceived') {
+    // Upgrade successful — headers contain cookies, auth, etc.
+    const conn = wsConnections.get(params.requestId);
+    if (conn) {
+      conn.handshakeHeaders = params.response?.headers || {};
+      conn.handshakeStatus  = params.response?.status;
+    }
+    const evt = {
+      type:       'websocket_handshake',
+      requestId:  params.requestId,
+      domain,
+      tabId,
+      timestamp:  Date.now(),
+      status:     params.response?.status,
+      headers:    params.response?.headers || {},
+    };
     send(evt);
     recordTabEvent(tabId, evt);
   }
-  else if (method === 'Network.webSocketFrameSent') {
-    const evt = { type: 'websocket', direction: 'sent', domain, tabId,
-                  payload: params.response.payloadData, timestamp: Date.now() };
+
+  else if (method === 'Network.webSocketFrameReceived') {
+    const conn    = wsConnections.get(params.requestId);
+    const payload = params.response?.payloadData ?? '';
+    const opcode  = params.response?.opcode ?? 1;
+
+    let frame = null;
+    if (conn) {
+      frame = wsAddFrame(conn, 'recv', payload, opcode);
+    }
+
+    const evt = {
+      type:       'websocket',
+      subtype:    'frame',
+      direction:  'recv',
+      requestId:  params.requestId,
+      domain,
+      tabId,
+      timestamp:  Date.now(),
+      payload,
+      opcode,
+      parsed:     frame?.parsed     ?? null,
+      flags:      frame?.flags      ?? [],
+      extracted:  frame?.extractedValues ?? {},
+      // Connection stats snapshot
+      connStats: conn ? {
+        url:        conn.url,
+        frameCount: { ...conn.frameCount },
+        byteCount:  { ...conn.byteCount },
+        patterns:   [...conn.patterns],
+        age:        Date.now() - conn.createdAt,
+      } : null,
+    };
     send(evt);
     recordTabEvent(tabId, evt);
+
+    // Alert for high-value patterns
+    if (frame?.flags?.some(f => ['CRASH_POINT','MULTIPLIER','GAME_STATE','RESULT'].includes(f))) {
+      console.log(`🎯 WS INTERESTING [${frame.flags.join(',')}]:`, payload.slice(0, 200));
+    }
+  }
+
+  else if (method === 'Network.webSocketFrameSent') {
+    const conn    = wsConnections.get(params.requestId);
+    const payload = params.response?.payloadData ?? '';
+    const opcode  = params.response?.opcode ?? 1;
+
+    let frame = null;
+    if (conn) {
+      frame = wsAddFrame(conn, 'sent', payload, opcode);
+    }
+
+    const evt = {
+      type:       'websocket',
+      subtype:    'frame',
+      direction:  'sent',
+      requestId:  params.requestId,
+      domain,
+      tabId,
+      timestamp:  Date.now(),
+      payload,
+      opcode,
+      parsed:     frame?.parsed     ?? null,
+      flags:      frame?.flags      ?? [],
+      extracted:  frame?.extractedValues ?? {},
+      connStats: conn ? {
+        url:        conn.url,
+        frameCount: { ...conn.frameCount },
+        patterns:   [...conn.patterns],
+        age:        Date.now() - conn.createdAt,
+      } : null,
+    };
+    send(evt);
+    recordTabEvent(tabId, evt);
+  }
+
+  else if (method === 'Network.webSocketFrameError') {
+    const conn = wsConnections.get(params.requestId);
+    const evt = {
+      type:       'websocket_error',
+      requestId:  params.requestId,
+      domain,
+      tabId,
+      timestamp:  Date.now(),
+      errorMessage: params.errorMessage,
+      connStats: conn ? {
+        url:        conn.url,
+        frameCount: { ...conn.frameCount },
+        patterns:   [...conn.patterns],
+      } : null,
+    };
+    send(evt);
+    recordTabEvent(tabId, evt);
+    console.warn(`🔌 WS error on ${params.requestId}:`, params.errorMessage);
+  }
+
+  else if (method === 'Network.webSocketClosed') {
+    const conn = wsConnections.get(params.requestId);
+    if (conn) conn.closedAt = Date.now();
+
+    const evt = {
+      type:       'websocket_closed',
+      requestId:  params.requestId,
+      domain,
+      tabId,
+      timestamp:  Date.now(),
+      summary: conn ? {
+        url:        conn.url,
+        duration:   conn.closedAt - conn.createdAt,
+        frameCount: { ...conn.frameCount },
+        byteCount:  { ...conn.byteCount },
+        patterns:   [...conn.patterns],
+      } : null,
+    };
+    send(evt);
+    recordTabEvent(tabId, evt);
+
+    // Keep connection in registry for 60s for any late queries, then remove
+    if (conn) setTimeout(() => wsConnections.delete(params.requestId), 60000);
+
+    console.log(`🔌 WS closed: ${params.requestId}`);
   }
 });
 
@@ -481,6 +770,7 @@ chrome.tabs.onRemoved.addListener((tabId) => {
   if (debuggedTabs.has(tabId)) debuggedTabs.delete(tabId);
   tabContexts.delete(tabId);
   pendingRequests.forEach((v, k) => { if (v.tabId === tabId) pendingRequests.delete(k); });
+  wsConnections.forEach((conn, id) => { if (conn.tabId === tabId) wsConnections.delete(id); });
   setTimeout(() => tabStats.delete(tabId), 60000);
 });
 
@@ -491,7 +781,6 @@ function handleNativeCommand(msg) {
 
   if (command === 'navigate' || command === 'nav') {
     const url = msg.url || msg.args || '';
-    console.log('🚀 Navigate to:', url);
     navigateAndTrack(url);
   }
   else if (command === 'track') {
@@ -499,7 +788,6 @@ function handleNativeCommand(msg) {
       if (tabs[0]) {
         tabContexts.set(tabs[0].id, getDomain(tabs[0].url));
         attachDebugger(tabs[0].id);
-        console.log('🔬 Tracking tab:', tabs[0].id, tabs[0].url);
       }
     });
   }
@@ -508,13 +796,44 @@ function handleNativeCommand(msg) {
       if (tabs[0]) detachDebugger(tabs[0].id);
     });
   }
+  else if (command === 'ws_list') {
+    // Return all active WS connections
+    const list = [];
+    wsConnections.forEach((conn, id) => {
+      list.push({
+        requestId:  id,
+        url:        conn.url,
+        domain:     conn.domain,
+        tabId:      conn.tabId,
+        createdAt:  conn.createdAt,
+        closedAt:   conn.closedAt,
+        frameCount: conn.frameCount,
+        byteCount:  conn.byteCount,
+        patterns:   [...conn.patterns],
+        open:       !conn.closedAt,
+      });
+    });
+    send({ type: 'ws_list', connections: list, timestamp: Date.now() });
+  }
+  else if (command === 'ws_frames') {
+    // Return buffered frames for a specific connection
+    const conn = wsConnections.get(msg.requestId);
+    if (conn) {
+      send({
+        type:      'ws_frames_dump',
+        requestId: msg.requestId,
+        url:       conn.url,
+        frames:    conn.frames,
+        timestamp: Date.now(),
+      });
+    }
+  }
   else if (command === 'fingerprint') {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       if (tabs[0]) {
         const domain = tabContexts.get(tabs[0].id) || getDomain(tabs[0].url || '');
         tabContexts.set(tabs[0].id, domain);
         captureFingerprint(tabs[0].id);
-        console.log('🖥️ Manual fingerprint capture for tab:', tabs[0].id);
       }
     });
   }
@@ -573,6 +892,21 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (command === 'popup_get_state') {
     const stats      = getTabStats(tabId);
     const isTracking = debuggedTabs.has(tabId);
+
+    // Include active WS connections for this tab
+    const tabWsConns = [];
+    wsConnections.forEach((conn, id) => {
+      if (conn.tabId === tabId) {
+        tabWsConns.push({
+          requestId:  id,
+          url:        conn.url,
+          open:       !conn.closedAt,
+          frameCount: conn.frameCount,
+          patterns:   [...conn.patterns],
+        });
+      }
+    });
+
     sendResponse({
       nativeConnected: !!nativePort,
       isTracking,
@@ -581,9 +915,11 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         tokens:      stats.tokens,
         authCookies: stats.authCookies,
         websockets:  stats.websockets,
+        wsFrames:    stats.wsFrames,
       },
-      totalEvents: stats.events.length,
-      events: stats.events.slice(0, 30),
+      wsConnections:  tabWsConns,
+      totalEvents:    stats.events.length,
+      events:         stats.events.slice(0, 30),
     });
     return true;
   }
@@ -593,7 +929,6 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       if (chrome.runtime.lastError || !tab) { sendResponse({ success: false }); return; }
       tabContexts.set(tabId, getDomain(tab.url || ''));
       attachDebugger(tabId);
-      // Capture fingerprint immediately when tracking starts
       setTimeout(() => captureFingerprint(tabId), 1000);
       sendResponse({ success: true });
     });
@@ -614,20 +949,16 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       if (action === 'dommap') {
         mapDOM(tabId, domain);
         sendResponse({ success: true });
-
       } else if (action === 'fingerprint') {
         captureFingerprint(tabId);
         sendResponse({ success: true });
-
       } else if (action === 'screenshot') {
         chrome.tabs.captureVisibleTab(tab.windowId, { format: 'png' }, (dataUrl) => {
           if (chrome.runtime.lastError) { sendResponse({ success: false }); return; }
           const evt = { type: 'screenshot', domain, dataUrl, url: tab.url, timestamp: Date.now() };
-          send(evt);
-          recordTabEvent(tabId, evt);
+          send(evt); recordTabEvent(tabId, evt);
           sendResponse({ success: true });
         });
-
       } else if (action === 'get_html') {
         chrome.scripting.executeScript({
           target: { tabId },
@@ -635,19 +966,15 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         }, (r) => {
           if (chrome.runtime.lastError || !r?.[0]) { sendResponse({ success: false }); return; }
           const evt = { type: 'html', domain, data: r[0].result, timestamp: Date.now() };
-          send(evt);
-          recordTabEvent(tabId, evt);
+          send(evt); recordTabEvent(tabId, evt);
           sendResponse({ success: true });
         });
-
       } else if (action === 'get_cookies') {
         chrome.cookies.getAll({ url: tab.url }, (cookies) => {
           const evt = { type: 'cookies', domain, cookies, url: tab.url, timestamp: Date.now() };
-          send(evt);
-          recordTabEvent(tabId, evt);
+          send(evt); recordTabEvent(tabId, evt);
           sendResponse({ success: true });
         });
-
       } else if (action === 'get_storage') {
         chrome.scripting.executeScript({
           target: { tabId },
@@ -655,11 +982,9 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         }, (r) => {
           if (chrome.runtime.lastError || !r?.[0]) { sendResponse({ success: false }); return; }
           const evt = { type: 'storage', domain, data: r[0].result, timestamp: Date.now() };
-          send(evt);
-          recordTabEvent(tabId, evt);
+          send(evt); recordTabEvent(tabId, evt);
           sendResponse({ success: true });
         });
-
       } else {
         sendResponse({ success: false });
       }
@@ -686,11 +1011,7 @@ function connectToNative() {
       if (!msg) return;
       reconnectAttempts = 0;
       console.log('📩 From native:', JSON.stringify(msg).slice(0, 100));
-
-      if (msg.command && msg.command !== 'pong') {
-        handleNativeCommand(msg);
-      }
-
+      if (msg.command && msg.command !== 'pong') handleNativeCommand(msg);
       chrome.runtime.sendMessage(msg).catch(() => {});
     });
 

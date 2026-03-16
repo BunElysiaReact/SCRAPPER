@@ -1,0 +1,6052 @@
+[
+  {
+    "id": 8710469,
+    "home": "Mathare United",
+    "away": "AFC Leopards",
+    "competition": "Premier League",
+    "country": "Kenya",
+    "kickoff": "2026-03-14T12:30:00+00:00",
+    "markets_count": 15,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653412049,
+            "name": "Mathare United",
+            "odds": "3.70",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653412065,
+            "name": "Draw",
+            "odds": "2.95",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653412075,
+            "name": "AFC Leopards",
+            "odds": "2.00",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653412077,
+            "name": "1 OR X",
+            "odds": "1.50",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653412067,
+            "name": "X OR 2",
+            "odds": "1.19",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653412055,
+            "name": "1 OR 2",
+            "odds": "1.26",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653412045,
+            "name": "OVER 2.50",
+            "odds": "2.70",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653412061,
+            "name": "UNDER 2.50",
+            "odds": "1.41",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653412053,
+            "name": "YES (GG)",
+            "odds": "2.26",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653412063,
+            "name": "NO (NG)",
+            "odds": "1.52",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8534523,
+    "home": "Arsenal",
+    "away": "Everton",
+    "competition": "Premier League",
+    "country": "England",
+    "kickoff": "2026-03-14T17:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651292463,
+            "name": "Arsenal",
+            "odds": "1.40",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651292569,
+            "name": "Draw",
+            "odds": "4.52",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651292619,
+            "name": "Everton",
+            "odds": "8.07",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651292617,
+            "name": "1 OR X",
+            "odds": "1.09",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651292561,
+            "name": "X OR 2",
+            "odds": "2.85",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651292455,
+            "name": "1 OR 2",
+            "odds": "1.19",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651292361,
+            "name": "OVER 2.50",
+            "odds": "1.87",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651292521,
+            "name": "UNDER 2.50",
+            "odds": "1.90",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651292371,
+            "name": "YES (GG)",
+            "odds": "2.27",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651292493,
+            "name": "NO (NG)",
+            "odds": "1.59",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8534477,
+    "home": "West Ham",
+    "away": "Manchester City",
+    "competition": "Premier League",
+    "country": "England",
+    "kickoff": "2026-03-14T20:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651291839,
+            "name": "West Ham",
+            "odds": "4.40",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651291859,
+            "name": "Draw",
+            "odds": "4.10",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651291875,
+            "name": "Manchester City",
+            "odds": "1.69",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651291853,
+            "name": "1 OR X",
+            "odds": "2.07",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651291829,
+            "name": "X OR 2",
+            "odds": "1.22",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651291793,
+            "name": "1 OR 2",
+            "odds": "1.24",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651291577,
+            "name": "OVER 2.50",
+            "odds": "1.54",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651291639,
+            "name": "UNDER 2.50",
+            "odds": "2.44",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651291791,
+            "name": "YES (GG)",
+            "odds": "1.59",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651291831,
+            "name": "NO (NG)",
+            "odds": "2.27",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8545407,
+    "home": "Bayer Leverkusen",
+    "away": "Bayern Munchen",
+    "competition": "Bundesliga",
+    "country": "Germany",
+    "kickoff": "2026-03-14T14:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651511507,
+            "name": "Bayer Leverkusen",
+            "odds": "5.20",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651511565,
+            "name": "Draw",
+            "odds": "4.80",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651511623,
+            "name": "Bayern Munchen",
+            "odds": "1.56",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651511629,
+            "name": "1 OR X",
+            "odds": "2.37",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651511579,
+            "name": "X OR 2",
+            "odds": "1.18",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651511509,
+            "name": "1 OR 2",
+            "odds": "1.20",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651511691,
+            "name": "OVER 2.50",
+            "odds": "1.36",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651511731,
+            "name": "UNDER 2.50",
+            "odds": "3.10",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651511455,
+            "name": "YES (GG)",
+            "odds": "1.46",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651511527,
+            "name": "NO (NG)",
+            "odds": "2.60",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8550707,
+    "home": "Real Madrid",
+    "away": "Elche",
+    "competition": "LaLiga",
+    "country": "Spain",
+    "kickoff": "2026-03-14T20:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651627971,
+            "name": "Real Madrid",
+            "odds": "1.37",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651628047,
+            "name": "Draw",
+            "odds": "5.56",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651628101,
+            "name": "Elche",
+            "odds": "7.47",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651628093,
+            "name": "1 OR X",
+            "odds": "1.11",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651628035,
+            "name": "X OR 2",
+            "odds": "3.00",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651627967,
+            "name": "1 OR 2",
+            "odds": "1.15",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651628145,
+            "name": "OVER 2.50",
+            "odds": "1.43",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651628183,
+            "name": "UNDER 2.50",
+            "odds": "2.70",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651627959,
+            "name": "YES (GG)",
+            "odds": "1.69",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651628059,
+            "name": "NO (NG)",
+            "odds": "2.04",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8550703,
+    "home": "Atletico Madrid",
+    "away": "Getafe",
+    "competition": "LaLiga",
+    "country": "Spain",
+    "kickoff": "2026-03-14T15:15:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651627549,
+            "name": "Atletico Madrid",
+            "odds": "1.59",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651627623,
+            "name": "Draw",
+            "odds": "3.80",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651627725,
+            "name": "Getafe",
+            "odds": "6.80",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651627769,
+            "name": "1 OR X",
+            "odds": "1.13",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651627679,
+            "name": "X OR 2",
+            "odds": "2.31",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651627569,
+            "name": "1 OR 2",
+            "odds": "1.28",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651627579,
+            "name": "OVER 2.50",
+            "odds": "2.36",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651627689,
+            "name": "UNDER 2.50",
+            "odds": "1.55",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651627575,
+            "name": "YES (GG)",
+            "odds": "2.41",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651627691,
+            "name": "NO (NG)",
+            "odds": "1.50",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8534291,
+    "home": "Chelsea",
+    "away": "Newcastle",
+    "competition": "Premier League",
+    "country": "England",
+    "kickoff": "2026-03-14T17:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651288347,
+            "name": "Chelsea",
+            "odds": "1.83",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651288361,
+            "name": "Draw",
+            "odds": "4.00",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651288383,
+            "name": "Newcastle",
+            "odds": "3.80",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651288307,
+            "name": "1 OR X",
+            "odds": "1.27",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651288285,
+            "name": "X OR 2",
+            "odds": "1.91",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651288263,
+            "name": "1 OR 2",
+            "odds": "1.26",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651288071,
+            "name": "OVER 2.50",
+            "odds": "1.50",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651288127,
+            "name": "UNDER 2.50",
+            "odds": "2.55",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651288345,
+            "name": "YES (GG)",
+            "odds": "1.51",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651288359,
+            "name": "NO (NG)",
+            "odds": "2.45",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8534367,
+    "home": "Sunderland",
+    "away": "Brighton",
+    "competition": "Premier League",
+    "country": "England",
+    "kickoff": "2026-03-14T15:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651290925,
+            "name": "Sunderland",
+            "odds": "3.45",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651290997,
+            "name": "Draw",
+            "odds": "3.30",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651291029,
+            "name": "Brighton",
+            "odds": "2.15",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651290943,
+            "name": "1 OR X",
+            "odds": "1.66",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651290859,
+            "name": "X OR 2",
+            "odds": "1.31",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651290809,
+            "name": "1 OR 2",
+            "odds": "1.34",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651290967,
+            "name": "OVER 2.50",
+            "odds": "2.03",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651291031,
+            "name": "UNDER 2.50",
+            "odds": "1.76",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651290835,
+            "name": "YES (GG)",
+            "odds": "1.84",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651290915,
+            "name": "NO (NG)",
+            "odds": "1.90",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8534285,
+    "home": "Burnley",
+    "away": "Bournemouth",
+    "competition": "Premier League",
+    "country": "England",
+    "kickoff": "2026-03-14T15:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651286885,
+            "name": "Burnley",
+            "odds": "4.00",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651286927,
+            "name": "Draw",
+            "odds": "3.80",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651286951,
+            "name": "Bournemouth",
+            "odds": "1.83",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651287145,
+            "name": "1 OR X",
+            "odds": "1.91",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651287099,
+            "name": "X OR 2",
+            "odds": "1.25",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651287013,
+            "name": "1 OR 2",
+            "odds": "1.27",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651286999,
+            "name": "OVER 2.50",
+            "odds": "1.66",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651287053,
+            "name": "UNDER 2.50",
+            "odds": "2.19",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651286905,
+            "name": "YES (GG)",
+            "odds": "1.64",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651287027,
+            "name": "NO (NG)",
+            "odds": "2.17",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8546761,
+    "home": "Inter",
+    "away": "Atalanta",
+    "competition": "Serie A",
+    "country": "Italy",
+    "kickoff": "2026-03-14T14:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651533785,
+            "name": "Inter",
+            "odds": "1.55",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651533835,
+            "name": "Draw",
+            "odds": "4.50",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651533879,
+            "name": "Atalanta",
+            "odds": "5.80",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651533873,
+            "name": "1 OR X",
+            "odds": "1.15",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651533829,
+            "name": "X OR 2",
+            "odds": "2.36",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651533787,
+            "name": "1 OR 2",
+            "odds": "1.22",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651533773,
+            "name": "OVER 2.50",
+            "odds": "1.65",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651533831,
+            "name": "UNDER 2.50",
+            "odds": "2.16",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651533751,
+            "name": "YES (GG)",
+            "odds": "1.76",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651533789,
+            "name": "NO (NG)",
+            "odds": "1.99",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8545415,
+    "home": "Borussia Dortmund",
+    "away": "Augsburg",
+    "competition": "Bundesliga",
+    "country": "Germany",
+    "kickoff": "2026-03-14T14:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651513099,
+            "name": "Borussia Dortmund",
+            "odds": "1.48",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651513215,
+            "name": "Draw",
+            "odds": "4.90",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651513267,
+            "name": "Augsburg",
+            "odds": "6.20",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651513275,
+            "name": "1 OR X",
+            "odds": "1.15",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651513239,
+            "name": "X OR 2",
+            "odds": "2.55",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651513135,
+            "name": "1 OR 2",
+            "odds": "1.20",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651513079,
+            "name": "OVER 2.50",
+            "odds": "1.54",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651513187,
+            "name": "UNDER 2.50",
+            "odds": "2.44",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651513089,
+            "name": "YES (GG)",
+            "odds": "1.69",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651513181,
+            "name": "NO (NG)",
+            "odds": "2.09",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8545401,
+    "home": "Eintracht Frankfurt",
+    "away": "Heidenheim",
+    "competition": "Bundesliga",
+    "country": "Germany",
+    "kickoff": "2026-03-14T14:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651510463,
+            "name": "Eintracht Frankfurt",
+            "odds": "1.58",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651510503,
+            "name": "Draw",
+            "odds": "4.60",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651510553,
+            "name": "Heidenheim",
+            "odds": "5.40",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651510439,
+            "name": "1 OR X",
+            "odds": "1.18",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651510395,
+            "name": "X OR 2",
+            "odds": "2.32",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651510327,
+            "name": "1 OR 2",
+            "odds": "1.22",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651510299,
+            "name": "OVER 2.50",
+            "odds": "1.54",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651510359,
+            "name": "UNDER 2.50",
+            "odds": "2.43",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651510505,
+            "name": "YES (GG)",
+            "odds": "1.63",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651510559,
+            "name": "NO (NG)",
+            "odds": "2.19",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8546777,
+    "home": "Napoli",
+    "away": "Lecce",
+    "competition": "Serie A",
+    "country": "Italy",
+    "kickoff": "2026-03-14T17:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651535753,
+            "name": "Napoli",
+            "odds": "1.41",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651535817,
+            "name": "Draw",
+            "odds": "4.60",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651535851,
+            "name": "Lecce",
+            "odds": "9.01",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651535847,
+            "name": "1 OR X",
+            "odds": "1.09",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651535795,
+            "name": "X OR 2",
+            "odds": "2.85",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651535731,
+            "name": "1 OR 2",
+            "odds": "1.19",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651535949,
+            "name": "OVER 2.50",
+            "odds": "2.05",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651535987,
+            "name": "UNDER 2.50",
+            "odds": "1.72",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651535719,
+            "name": "YES (GG)",
+            "odds": "2.50",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651535801,
+            "name": "NO (NG)",
+            "odds": "1.49",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8550655,
+    "home": "Girona",
+    "away": "Athletic Bilbao",
+    "competition": "LaLiga",
+    "country": "Spain",
+    "kickoff": "2026-03-14T13:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651625877,
+            "name": "Girona",
+            "odds": "2.75",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651625935,
+            "name": "Draw",
+            "odds": "3.35",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651625961,
+            "name": "Athletic Bilbao",
+            "odds": "2.65",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651626097,
+            "name": "1 OR X",
+            "odds": "1.48",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651626081,
+            "name": "X OR 2",
+            "odds": "1.47",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651626059,
+            "name": "1 OR 2",
+            "odds": "1.35",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651625857,
+            "name": "OVER 2.50",
+            "odds": "2.01",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651625919,
+            "name": "UNDER 2.50",
+            "odds": "1.75",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651625997,
+            "name": "YES (GG)",
+            "odds": "1.78",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651626033,
+            "name": "NO (NG)",
+            "odds": "1.93",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8546815,
+    "home": "Udinese",
+    "away": "Juventus",
+    "competition": "Serie A",
+    "country": "Italy",
+    "kickoff": "2026-03-14T19:45:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651537089,
+            "name": "Udinese",
+            "odds": "6.00",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651537217,
+            "name": "Draw",
+            "odds": "4.20",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651537259,
+            "name": "Juventus",
+            "odds": "1.57",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651537249,
+            "name": "1 OR X",
+            "odds": "2.31",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651537207,
+            "name": "X OR 2",
+            "odds": "1.15",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651537115,
+            "name": "1 OR 2",
+            "odds": "1.24",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651537019,
+            "name": "OVER 2.50",
+            "odds": "1.89",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651537163,
+            "name": "UNDER 2.50",
+            "odds": "1.85",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651537065,
+            "name": "YES (GG)",
+            "odds": "1.99",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651537173,
+            "name": "NO (NG)",
+            "odds": "1.76",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8545409,
+    "home": "Hoffenheim",
+    "away": "VfL Wolfsburg",
+    "competition": "Bundesliga",
+    "country": "Germany",
+    "kickoff": "2026-03-14T14:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651511875,
+            "name": "Hoffenheim",
+            "odds": "1.46",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651512067,
+            "name": "Draw",
+            "odds": "5.20",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651512103,
+            "name": "VfL Wolfsburg",
+            "odds": "6.20",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651512091,
+            "name": "1 OR X",
+            "odds": "1.14",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651511979,
+            "name": "X OR 2",
+            "odds": "2.65",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651511945,
+            "name": "1 OR 2",
+            "odds": "1.18",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651511923,
+            "name": "OVER 2.50",
+            "odds": "1.43",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651512037,
+            "name": "UNDER 2.50",
+            "odds": "2.80",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651511891,
+            "name": "YES (GG)",
+            "odds": "1.59",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651512009,
+            "name": "NO (NG)",
+            "odds": "2.27",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8550639,
+    "home": "Monaco",
+    "away": "Brest",
+    "competition": "Ligue 1",
+    "country": "France",
+    "kickoff": "2026-03-14T20:05:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651623727,
+            "name": "Monaco",
+            "odds": "1.67",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651623733,
+            "name": "Draw",
+            "odds": "4.20",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651623737,
+            "name": "Brest",
+            "odds": "4.90",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651623739,
+            "name": "1 OR X",
+            "odds": "1.20",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651623735,
+            "name": "X OR 2",
+            "odds": "2.15",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651623729,
+            "name": "1 OR 2",
+            "odds": "1.25",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651631555,
+            "name": "OVER 2.50",
+            "odds": "1.62",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651631597,
+            "name": "UNDER 2.50",
+            "odds": "2.26",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651631343,
+            "name": "YES (GG)",
+            "odds": "1.65",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651631415,
+            "name": "NO (NG)",
+            "odds": "2.15",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8547159,
+    "home": "PSV Eindhoven",
+    "away": "NEC Nijmegen",
+    "competition": "Eredivisie",
+    "country": "Netherlands",
+    "kickoff": "2026-03-14T17:45:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651549013,
+            "name": "PSV Eindhoven",
+            "odds": "1.43",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651549119,
+            "name": "Draw",
+            "odds": "5.20",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651549203,
+            "name": "NEC Nijmegen",
+            "odds": "5.60",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651549253,
+            "name": "1 OR X",
+            "odds": "1.15",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651549197,
+            "name": "X OR 2",
+            "odds": "2.60",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651549055,
+            "name": "1 OR 2",
+            "odds": "1.17",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651549109,
+            "name": "OVER 2.50",
+            "odds": "1.26",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651549209,
+            "name": "UNDER 2.50",
+            "odds": "3.50",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651549043,
+            "name": "YES (GG)",
+            "odds": "1.41",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651549141,
+            "name": "NO (NG)",
+            "odds": "2.75",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8688853,
+    "home": "FC Arouca",
+    "away": "SL Benfica",
+    "competition": "Primeira Liga",
+    "country": "Portugal",
+    "kickoff": "2026-03-14T20:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652911137,
+            "name": "FC Arouca",
+            "odds": "10.00",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652911143,
+            "name": "Draw",
+            "odds": "5.80",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652911147,
+            "name": "SL Benfica",
+            "odds": "1.27",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652911149,
+            "name": "1 OR X",
+            "odds": "3.20",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652911145,
+            "name": "X OR 2",
+            "odds": "1.07",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652911139,
+            "name": "1 OR 2",
+            "odds": "1.13",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653108419,
+            "name": "OVER 2.50",
+            "odds": "1.57",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653108585,
+            "name": "UNDER 2.50",
+            "odds": "2.26",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653108423,
+            "name": "YES (GG)",
+            "odds": "2.05",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653108531,
+            "name": "NO (NG)",
+            "odds": "1.69",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8547111,
+    "home": "Ajax",
+    "away": "Sparta Rotterdam",
+    "competition": "Eredivisie",
+    "country": "Netherlands",
+    "kickoff": "2026-03-14T20:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651546431,
+            "name": "Ajax",
+            "odds": "1.66",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651546523,
+            "name": "Draw",
+            "odds": "4.20",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651546575,
+            "name": "Sparta Rotterdam",
+            "odds": "4.40",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651546517,
+            "name": "1 OR X",
+            "odds": "1.22",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651546439,
+            "name": "X OR 2",
+            "odds": "2.11",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651546367,
+            "name": "1 OR 2",
+            "odds": "1.23",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651546401,
+            "name": "OVER 2.50",
+            "odds": "1.48",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2651546497,
+            "name": "UNDER 2.50",
+            "odds": "2.48",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2651546343,
+            "name": "YES (GG)",
+            "odds": "1.54",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2651546375,
+            "name": "NO (NG)",
+            "odds": "2.38",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8408091,
+    "home": "Celtic",
+    "away": "Motherwell",
+    "competition": "Premiership",
+    "country": "Scotland",
+    "kickoff": "2026-03-14T15:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2649923597,
+            "name": "Celtic",
+            "odds": "1.64",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2649923723,
+            "name": "Draw",
+            "odds": "3.95",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2649923767,
+            "name": "Motherwell",
+            "odds": "4.70",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2649923751,
+            "name": "1 OR X",
+            "odds": "1.20",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2649923705,
+            "name": "X OR 2",
+            "odds": "2.14",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2649923603,
+            "name": "1 OR 2",
+            "odds": "1.25",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2649923547,
+            "name": "OVER 2.50",
+            "odds": "1.59",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2649923653,
+            "name": "UNDER 2.50",
+            "odds": "2.22",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2649923607,
+            "name": "YES (GG)",
+            "odds": "1.62",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2649923731,
+            "name": "NO (NG)",
+            "odds": "2.15",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8688813,
+    "home": "Galatasaray",
+    "away": "Basaksehir",
+    "competition": "Super Lig",
+    "country": "Turkey",
+    "kickoff": "2026-03-14T17:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652910873,
+            "name": "Galatasaray",
+            "odds": "1.58",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652910911,
+            "name": "Draw",
+            "odds": "4.30",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652910935,
+            "name": "Basaksehir",
+            "odds": "4.80",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652910939,
+            "name": "1 OR X",
+            "odds": "1.19",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652910913,
+            "name": "X OR 2",
+            "odds": "2.23",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652910859,
+            "name": "1 OR 2",
+            "odds": "1.22",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652910831,
+            "name": "OVER 2.50",
+            "odds": "1.50",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652910875,
+            "name": "UNDER 2.50",
+            "odds": "2.42",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652910685,
+            "name": "YES (GG)",
+            "odds": "1.59",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652910755,
+            "name": "NO (NG)",
+            "odds": "2.26",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8688829,
+    "home": "FC Thun",
+    "away": "Grasshoppers",
+    "competition": "Super League",
+    "country": "Switzerland",
+    "kickoff": "2026-03-14T17:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652911027,
+            "name": "FC Thun",
+            "odds": "1.55",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652911033,
+            "name": "Draw",
+            "odds": "4.10",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652911037,
+            "name": "Grasshoppers",
+            "odds": "5.20",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652911035,
+            "name": "1 OR X",
+            "odds": "1.17",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652911031,
+            "name": "X OR 2",
+            "odds": "2.30",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652911025,
+            "name": "1 OR 2",
+            "odds": "1.23",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653072247,
+            "name": "OVER 2.50",
+            "odds": "1.56",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653072303,
+            "name": "UNDER 2.50",
+            "odds": "2.28",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653072343,
+            "name": "YES (GG)",
+            "odds": "1.65",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653072435,
+            "name": "NO (NG)",
+            "odds": "2.12",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8677421,
+    "home": "Yokohama F Marinos",
+    "away": "JEF United Chiba",
+    "competition": "J1 League",
+    "country": "Japan",
+    "kickoff": "2026-03-14T04:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652752781,
+            "name": "Yokohama F Marinos",
+            "odds": "1.96",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652752847,
+            "name": "Draw",
+            "odds": "3.25",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652752897,
+            "name": "JEF United Chiba",
+            "odds": "3.30",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652752893,
+            "name": "1 OR X",
+            "odds": "1.24",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652752827,
+            "name": "X OR 2",
+            "odds": "1.57",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652752693,
+            "name": "1 OR 2",
+            "odds": "1.24",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652752659,
+            "name": "OVER 2.50",
+            "odds": "1.79",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652752757,
+            "name": "UNDER 2.50",
+            "odds": "1.92",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652752665,
+            "name": "YES (GG)",
+            "odds": "1.69",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652752749,
+            "name": "NO (NG)",
+            "odds": "1.97",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8690723,
+    "home": "Kyoto Sanga",
+    "away": "Cerezo Osaka",
+    "competition": "J1 League",
+    "country": "Japan",
+    "kickoff": "2026-03-14T05:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652949281,
+            "name": "Kyoto Sanga",
+            "odds": "2.10",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652949393,
+            "name": "Draw",
+            "odds": "3.20",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652949439,
+            "name": "Cerezo Osaka",
+            "odds": "3.15",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652949467,
+            "name": "1 OR X",
+            "odds": "1.24",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652949443,
+            "name": "X OR 2",
+            "odds": "1.46",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652949351,
+            "name": "1 OR 2",
+            "odds": "1.24",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652949261,
+            "name": "OVER 2.50",
+            "odds": "1.84",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652949387,
+            "name": "UNDER 2.50",
+            "odds": "1.87",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652949315,
+            "name": "YES (GG)",
+            "odds": "1.66",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652949417,
+            "name": "NO (NG)",
+            "odds": "2.01",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8668515,
+    "home": "Nagoya Grampus",
+    "away": "Vissel Kobe",
+    "competition": "J1 League",
+    "country": "Japan",
+    "kickoff": "2026-03-14T05:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652671807,
+            "name": "Nagoya Grampus",
+            "odds": "2.70",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652671895,
+            "name": "Draw",
+            "odds": "3.10",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652671959,
+            "name": "Vissel Kobe",
+            "odds": "2.41",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652671953,
+            "name": "1 OR X",
+            "odds": "1.37",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652671893,
+            "name": "X OR 2",
+            "odds": "1.30",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652671765,
+            "name": "1 OR 2",
+            "odds": "1.25",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652671741,
+            "name": "OVER 2.50",
+            "odds": "2.14",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652671837,
+            "name": "UNDER 2.50",
+            "odds": "1.63",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652671775,
+            "name": "YES (GG)",
+            "odds": "1.84",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652671877,
+            "name": "NO (NG)",
+            "odds": "1.79",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8668403,
+    "home": "Kashiwa Reysol",
+    "away": "Machida Zelvia",
+    "competition": "J1 League",
+    "country": "Japan",
+    "kickoff": "2026-03-14T05:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652670979,
+            "name": "Kashiwa Reysol",
+            "odds": "1.93",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652671101,
+            "name": "Draw",
+            "odds": "3.15",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652671205,
+            "name": "Machida Zelvia",
+            "odds": "3.55",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652671227,
+            "name": "1 OR X",
+            "odds": "1.21",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652671185,
+            "name": "X OR 2",
+            "odds": "1.58",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652671051,
+            "name": "1 OR 2",
+            "odds": "1.26",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652670993,
+            "name": "OVER 2.50",
+            "odds": "1.99",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652671115,
+            "name": "UNDER 2.50",
+            "odds": "1.73",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652671017,
+            "name": "YES (GG)",
+            "odds": "1.84",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652671119,
+            "name": "NO (NG)",
+            "odds": "1.80",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8691341,
+    "home": "Gwangju",
+    "away": "Jeonbuk Hyundai",
+    "competition": "K-League 1",
+    "country": "Republic of Korea",
+    "kickoff": "2026-03-14T05:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652958793,
+            "name": "Gwangju",
+            "odds": "3.75",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652958895,
+            "name": "Draw",
+            "odds": "3.05",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652958991,
+            "name": "Jeonbuk Hyundai",
+            "odds": "1.89",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652958961,
+            "name": "1 OR X",
+            "odds": "1.60",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652958843,
+            "name": "X OR 2",
+            "odds": "1.20",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652958753,
+            "name": "1 OR 2",
+            "odds": "1.27",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652958799,
+            "name": "OVER 2.50",
+            "odds": "2.06",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652958923,
+            "name": "UNDER 2.50",
+            "odds": "1.68",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652958761,
+            "name": "YES (GG)",
+            "odds": "1.89",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652958875,
+            "name": "NO (NG)",
+            "odds": "1.75",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8692021,
+    "home": "Sanfrecce Hiroshima",
+    "away": "Gamba Osaka",
+    "competition": "J1 League",
+    "country": "Japan",
+    "kickoff": "2026-03-14T06:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652970563,
+            "name": "Sanfrecce Hiroshima",
+            "odds": "1.62",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652970679,
+            "name": "Draw",
+            "odds": "3.75",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652970783,
+            "name": "Gamba Osaka",
+            "odds": "4.40",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652970801,
+            "name": "1 OR X",
+            "odds": "1.14",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652970751,
+            "name": "X OR 2",
+            "odds": "1.76",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652970651,
+            "name": "1 OR 2",
+            "odds": "1.18",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652970625,
+            "name": "OVER 2.50",
+            "odds": "1.70",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652970773,
+            "name": "UNDER 2.50",
+            "odds": "2.03",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652970641,
+            "name": "YES (GG)",
+            "odds": "1.70",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652970745,
+            "name": "NO (NG)",
+            "odds": "1.96",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8671181,
+    "home": "Kashima Antlers",
+    "away": "Kawasaki Frontale",
+    "competition": "J1 League",
+    "country": "Japan",
+    "kickoff": "2026-03-14T06:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652698463,
+            "name": "Kashima Antlers",
+            "odds": "1.91",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652698575,
+            "name": "Draw",
+            "odds": "3.45",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652698649,
+            "name": "Kawasaki Frontale",
+            "odds": "3.30",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652698619,
+            "name": "1 OR X",
+            "odds": "1.24",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652698529,
+            "name": "X OR 2",
+            "odds": "1.60",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652698427,
+            "name": "1 OR 2",
+            "odds": "1.23",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652698451,
+            "name": "OVER 2.50",
+            "odds": "1.57",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652698589,
+            "name": "UNDER 2.50",
+            "odds": "2.27",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652698445,
+            "name": "YES (GG)",
+            "odds": "1.53",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652698603,
+            "name": "NO (NG)",
+            "odds": "2.24",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8713995,
+    "home": "Eastern AA",
+    "away": "Eastern District",
+    "competition": "Premier League",
+    "country": "Hong Kong, China",
+    "kickoff": "2026-03-14T07:00:00+00:00",
+    "markets_count": 22,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653646881,
+            "name": "Eastern AA",
+            "odds": "2.36",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653647013,
+            "name": "Draw",
+            "odds": "3.35",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653647067,
+            "name": "Eastern District",
+            "odds": "2.50",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653647043,
+            "name": "1 OR X",
+            "odds": "1.37",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653646971,
+            "name": "X OR 2",
+            "odds": "1.41",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653646847,
+            "name": "1 OR 2",
+            "odds": "1.24",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653646835,
+            "name": "OVER 2.50",
+            "odds": "1.68",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653646951,
+            "name": "UNDER 2.50",
+            "odds": "2.06",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653646953,
+            "name": "YES (GG)",
+            "odds": "1.59",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653647051,
+            "name": "NO (NG)",
+            "odds": "2.11",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8671171,
+    "home": "Tokyo Verdy",
+    "away": "Urawa Red Diamonds",
+    "competition": "J1 League",
+    "country": "Japan",
+    "kickoff": "2026-03-14T07:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652698065,
+            "name": "Tokyo Verdy",
+            "odds": "3.70",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652698175,
+            "name": "Draw",
+            "odds": "2.95",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652698221,
+            "name": "Urawa Red Diamonds",
+            "odds": "1.96",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652698197,
+            "name": "1 OR X",
+            "odds": "1.56",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652698139,
+            "name": "X OR 2",
+            "odds": "1.20",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652698049,
+            "name": "1 OR 2",
+            "odds": "1.28",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652698085,
+            "name": "OVER 2.50",
+            "odds": "2.33",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652698163,
+            "name": "UNDER 2.50",
+            "odds": "1.54",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652698125,
+            "name": "YES (GG)",
+            "odds": "2.07",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652698195,
+            "name": "NO (NG)",
+            "odds": "1.62",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8714019,
+    "home": "Golik North District",
+    "away": "Hong Kong Rangers",
+    "competition": "Premier League",
+    "country": "Hong Kong, China",
+    "kickoff": "2026-03-14T07:00:00+00:00",
+    "markets_count": 22,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653648137,
+            "name": "Golik North District",
+            "odds": "1.50",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653648181,
+            "name": "Draw",
+            "odds": "4.20",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653648197,
+            "name": "Hong Kong Rangers",
+            "odds": "4.60",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653648169,
+            "name": "1 OR X",
+            "odds": "1.13",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653648113,
+            "name": "X OR 2",
+            "odds": "1.98",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653648055,
+            "name": "1 OR 2",
+            "odds": "1.16",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653648225,
+            "name": "OVER 2.50",
+            "odds": "1.41",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653648263,
+            "name": "UNDER 2.50",
+            "odds": "2.70",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653648063,
+            "name": "YES (GG)",
+            "odds": "1.52",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653648133,
+            "name": "NO (NG)",
+            "odds": "2.26",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8692657,
+    "home": "Hangzhou NG",
+    "away": "Shanghai Shenhua",
+    "competition": "Chinese Super League",
+    "country": "China",
+    "kickoff": "2026-03-14T07:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652981881,
+            "name": "Hangzhou NG",
+            "odds": "2.42",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652981993,
+            "name": "Draw",
+            "odds": "3.45",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652982059,
+            "name": "Shanghai Shenhua",
+            "odds": "2.41",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652982065,
+            "name": "1 OR X",
+            "odds": "1.39",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652981983,
+            "name": "X OR 2",
+            "odds": "1.39",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652981877,
+            "name": "1 OR 2",
+            "odds": "1.23",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652981829,
+            "name": "OVER 2.50",
+            "odds": "1.49",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652981953,
+            "name": "UNDER 2.50",
+            "odds": "2.44",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652981833,
+            "name": "YES (GG)",
+            "odds": "1.45",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652981951,
+            "name": "NO (NG)",
+            "odds": "2.44",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8691263,
+    "home": "Daejeon Citizen",
+    "away": "Sangju Sangmu",
+    "competition": "K-League 1",
+    "country": "Republic of Korea",
+    "kickoff": "2026-03-14T07:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652958447,
+            "name": "Daejeon Citizen",
+            "odds": "2.06",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652958499,
+            "name": "Draw",
+            "odds": "3.20",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652958521,
+            "name": "Sangju Sangmu",
+            "odds": "3.10",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652958473,
+            "name": "1 OR X",
+            "odds": "1.26",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652958413,
+            "name": "X OR 2",
+            "odds": "1.52",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652958363,
+            "name": "1 OR 2",
+            "odds": "1.25",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652958561,
+            "name": "OVER 2.50",
+            "odds": "1.78",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652958595,
+            "name": "UNDER 2.50",
+            "odds": "1.93",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652958353,
+            "name": "YES (GG)",
+            "odds": "1.67",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652958407,
+            "name": "NO (NG)",
+            "odds": "2.00",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8688793,
+    "home": "Kocaelispor",
+    "away": "Konyaspor",
+    "competition": "Super Lig",
+    "country": "Turkey",
+    "kickoff": "2026-03-14T10:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652910277,
+            "name": "Kocaelispor",
+            "odds": "2.25",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652910383,
+            "name": "Draw",
+            "odds": "3.05",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652910437,
+            "name": "Konyaspor",
+            "odds": "3.40",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652910443,
+            "name": "1 OR X",
+            "odds": "1.32",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652910361,
+            "name": "X OR 2",
+            "odds": "1.60",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652910257,
+            "name": "1 OR 2",
+            "odds": "1.38",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652910213,
+            "name": "OVER 2.50",
+            "odds": "2.27",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652910329,
+            "name": "UNDER 2.50",
+            "odds": "1.56",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652910243,
+            "name": "YES (GG)",
+            "odds": "1.98",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652910371,
+            "name": "NO (NG)",
+            "odds": "1.77",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8553727,
+    "home": "FK Sochi",
+    "away": "FC Krasnodar",
+    "competition": "Premier League",
+    "country": "Russia",
+    "kickoff": "2026-03-14T10:45:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651672791,
+            "name": "FK Sochi",
+            "odds": "6.60",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2651672797,
+            "name": "Draw",
+            "odds": "4.30",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2651672801,
+            "name": "FC Krasnodar",
+            "odds": "1.36",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2651672799,
+            "name": "1 OR X",
+            "odds": "2.24",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2651672795,
+            "name": "X OR 2",
+            "odds": "1.08",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2651672789,
+            "name": "1 OR 2",
+            "odds": "1.14",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652903867,
+            "name": "OVER 2.50",
+            "odds": "1.69",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652903973,
+            "name": "UNDER 2.50",
+            "odds": "2.04",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652903849,
+            "name": "YES (GG)",
+            "odds": "1.97",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652903975,
+            "name": "NO (NG)",
+            "odds": "1.69",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8695995,
+    "home": "Viseu",
+    "away": "Leixoes",
+    "competition": "Segunda Liga",
+    "country": "Portugal",
+    "kickoff": "2026-03-14T11:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653053627,
+            "name": "Viseu",
+            "odds": "1.80",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653053685,
+            "name": "Draw",
+            "odds": "3.30",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653053727,
+            "name": "Leixoes",
+            "odds": "3.95",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653053735,
+            "name": "1 OR X",
+            "odds": "1.17",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653053707,
+            "name": "X OR 2",
+            "odds": "1.61",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653053669,
+            "name": "1 OR 2",
+            "odds": "1.22",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653053607,
+            "name": "OVER 2.50",
+            "odds": "2.02",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653053651,
+            "name": "UNDER 2.50",
+            "odds": "1.71",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653053615,
+            "name": "YES (GG)",
+            "odds": "1.86",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653053673,
+            "name": "NO (NG)",
+            "odds": "1.77",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8710609,
+    "home": "Gais",
+    "away": "AIK Football",
+    "competition": "Svenska Cup",
+    "country": "Sweden",
+    "kickoff": "2026-03-14T12:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653427355,
+            "name": "Gais",
+            "odds": "1.94",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653427357,
+            "name": "Draw",
+            "odds": "3.45",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653427369,
+            "name": "AIK Football",
+            "odds": "3.20",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653904441,
+            "name": "1 OR X",
+            "odds": "1.25",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653904371,
+            "name": "X OR 2",
+            "odds": "1.58",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653904267,
+            "name": "1 OR 2",
+            "odds": "1.23",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653904203,
+            "name": "OVER 2.50",
+            "odds": "1.63",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653904317,
+            "name": "UNDER 2.50",
+            "odds": "2.14",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653904273,
+            "name": "YES (GG)",
+            "odds": "1.58",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653904379,
+            "name": "NO (NG)",
+            "odds": "2.14",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8695049,
+    "home": "Buriram Utd",
+    "away": "Chonburi",
+    "competition": "Thai League 1",
+    "country": "Thailand",
+    "kickoff": "2026-03-14T11:00:00+00:00",
+    "markets_count": 22,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653020937,
+            "name": "Buriram Utd",
+            "odds": "1.19",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653021045,
+            "name": "Draw",
+            "odds": "5.60",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653021083,
+            "name": "Chonburi",
+            "odds": "9.80",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653021053,
+            "name": "1 OR X",
+            "odds": "1.04",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653020969,
+            "name": "X OR 2",
+            "odds": "2.80",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653020883,
+            "name": "1 OR 2",
+            "odds": "1.08",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653021107,
+            "name": "OVER 2.50",
+            "odds": "1.44",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653021135,
+            "name": "UNDER 2.50",
+            "odds": "2.60",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653020927,
+            "name": "YES (GG)",
+            "odds": "1.97",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653021013,
+            "name": "NO (NG)",
+            "odds": "1.69",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8678743,
+    "home": "East Bengal",
+    "away": "Kerala Blasters",
+    "competition": "Indian Super League",
+    "country": "India",
+    "kickoff": "2026-03-14T11:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652764141,
+            "name": "East Bengal",
+            "odds": "1.52",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652764211,
+            "name": "Draw",
+            "odds": "3.75",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652764261,
+            "name": "Kerala Blasters",
+            "odds": "5.00",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652764117,
+            "name": "1 OR X",
+            "odds": "1.12",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652764033,
+            "name": "X OR 2",
+            "odds": "1.95",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652763991,
+            "name": "1 OR 2",
+            "odds": "1.18",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652763993,
+            "name": "OVER 2.50",
+            "odds": "1.81",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652764029,
+            "name": "UNDER 2.50",
+            "odds": "1.90",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652764017,
+            "name": "YES (GG)",
+            "odds": "1.90",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652764085,
+            "name": "NO (NG)",
+            "odds": "1.74",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8674579,
+    "home": "Muang Thong Utd",
+    "away": "Uthai Thani FC",
+    "competition": "Thai League 1",
+    "country": "Thailand",
+    "kickoff": "2026-03-14T11:30:00+00:00",
+    "markets_count": 22,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652727041,
+            "name": "Muang Thong Utd",
+            "odds": "2.19",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652727121,
+            "name": "Draw",
+            "odds": "3.35",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652727173,
+            "name": "Uthai Thani FC",
+            "odds": "2.75",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652727167,
+            "name": "1 OR X",
+            "odds": "1.32",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652727119,
+            "name": "X OR 2",
+            "odds": "1.46",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652727039,
+            "name": "1 OR 2",
+            "odds": "1.24",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652727353,
+            "name": "OVER 2.50",
+            "odds": "1.65",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652727359,
+            "name": "UNDER 2.50",
+            "odds": "2.11",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652727241,
+            "name": "YES (GG)",
+            "odds": "1.57",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652727295,
+            "name": "NO (NG)",
+            "odds": "2.16",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8709371,
+    "home": "Ishoej IF",
+    "away": "Fremad Amager",
+    "competition": "2nd Division",
+    "country": "Denmark",
+    "kickoff": "2026-03-14T12:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653353805,
+            "name": "Ishoej IF",
+            "odds": "2.75",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653353813,
+            "name": "Draw",
+            "odds": "3.15",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653353819,
+            "name": "Fremad Amager",
+            "odds": "2.29",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653353817,
+            "name": "1 OR X",
+            "odds": "1.43",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653353811,
+            "name": "X OR 2",
+            "odds": "1.32",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653353803,
+            "name": "1 OR 2",
+            "odds": "1.26",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653742503,
+            "name": "OVER 2.50",
+            "odds": "1.94",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653742631,
+            "name": "UNDER 2.50",
+            "odds": "1.77",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653742529,
+            "name": "YES (GG)",
+            "odds": "1.76",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653742657,
+            "name": "NO (NG)",
+            "odds": "1.88",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8674573,
+    "home": "Eintracht Braunschweig",
+    "away": "Fortuna Dusseldorf",
+    "competition": "2. Bundesliga",
+    "country": "Germany",
+    "kickoff": "2026-03-14T12:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652726301,
+            "name": "Eintracht Braunschweig",
+            "odds": "3.05",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652726429,
+            "name": "Draw",
+            "odds": "3.35",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652726477,
+            "name": "Fortuna Dusseldorf",
+            "odds": "2.25",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652726453,
+            "name": "1 OR X",
+            "odds": "1.60",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652726393,
+            "name": "X OR 2",
+            "odds": "1.37",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652726273,
+            "name": "1 OR 2",
+            "odds": "1.32",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652726253,
+            "name": "OVER 2.50",
+            "odds": "1.77",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652726383,
+            "name": "UNDER 2.50",
+            "odds": "1.94",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652726309,
+            "name": "YES (GG)",
+            "odds": "1.65",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652726415,
+            "name": "NO (NG)",
+            "odds": "2.16",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8674607,
+    "home": "Hobro IK",
+    "away": "AaB Aalborg",
+    "competition": "1st Division",
+    "country": "Denmark",
+    "kickoff": "2026-03-14T12:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652727447,
+            "name": "Hobro IK",
+            "odds": "2.90",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652727519,
+            "name": "Draw",
+            "odds": "3.30",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652727595,
+            "name": "AaB Aalborg",
+            "odds": "2.12",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652727639,
+            "name": "1 OR X",
+            "odds": "1.49",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652727581,
+            "name": "X OR 2",
+            "odds": "1.29",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652727431,
+            "name": "1 OR 2",
+            "odds": "1.24",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652727533,
+            "name": "OVER 2.50",
+            "odds": "1.70",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652727615,
+            "name": "UNDER 2.50",
+            "odds": "2.04",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652727487,
+            "name": "YES (GG)",
+            "odds": "1.61",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652727599,
+            "name": "NO (NG)",
+            "odds": "2.10",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8674619,
+    "home": "Arminia Bielefeld",
+    "away": "Paderborn",
+    "competition": "2. Bundesliga",
+    "country": "Germany",
+    "kickoff": "2026-03-14T12:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652727841,
+            "name": "Arminia Bielefeld",
+            "odds": "2.70",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652727959,
+            "name": "Draw",
+            "odds": "3.45",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652728039,
+            "name": "Paderborn",
+            "odds": "2.43",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652728037,
+            "name": "1 OR X",
+            "odds": "1.53",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652727939,
+            "name": "X OR 2",
+            "odds": "1.44",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652727847,
+            "name": "1 OR 2",
+            "odds": "1.31",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652727805,
+            "name": "OVER 2.50",
+            "odds": "1.66",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652727899,
+            "name": "UNDER 2.50",
+            "odds": "2.09",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652727807,
+            "name": "YES (GG)",
+            "odds": "1.56",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652727941,
+            "name": "NO (NG)",
+            "odds": "2.32",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8674569,
+    "home": "Holstein Kiel",
+    "away": "Nurnberg",
+    "competition": "2. Bundesliga",
+    "country": "Germany",
+    "kickoff": "2026-03-14T12:00:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652725645,
+            "name": "Holstein Kiel",
+            "odds": "2.36",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652725697,
+            "name": "Draw",
+            "odds": "3.50",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652725741,
+            "name": "Nurnberg",
+            "odds": "2.75",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652725569,
+            "name": "1 OR X",
+            "odds": "1.43",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652725521,
+            "name": "X OR 2",
+            "odds": "1.55",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652725459,
+            "name": "1 OR 2",
+            "odds": "1.31",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652725475,
+            "name": "OVER 2.50",
+            "odds": "1.66",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652725551,
+            "name": "UNDER 2.50",
+            "odds": "2.09",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652725615,
+            "name": "YES (GG)",
+            "odds": "1.58",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652725659,
+            "name": "NO (NG)",
+            "odds": "2.30",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8715099,
+    "home": "Arba Minch Kenema",
+    "away": "Ethiopian Medhin",
+    "competition": "Premier League",
+    "country": "Ethiopia",
+    "kickoff": "2026-03-14T12:00:00+00:00",
+    "markets_count": 22,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653708719,
+            "name": "Arba Minch Kenema",
+            "odds": "3.25",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653708809,
+            "name": "Draw",
+            "odds": "2.55",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653708871,
+            "name": "Ethiopian Medhin",
+            "odds": "2.38",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653708873,
+            "name": "1 OR X",
+            "odds": "1.40",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653708795,
+            "name": "X OR 2",
+            "odds": "1.25",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653708699,
+            "name": "1 OR 2",
+            "odds": "1.36",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653708717,
+            "name": "OVER 2.50",
+            "odds": "2.90",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653708793,
+            "name": "UNDER 2.50",
+            "odds": "1.37",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653708659,
+            "name": "YES (GG)",
+            "odds": "2.30",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653708773,
+            "name": "NO (NG)",
+            "odds": "1.50",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8591043,
+    "home": "Coventry",
+    "away": "Southampton",
+    "competition": "Championship",
+    "country": "England",
+    "kickoff": "2026-03-14T12:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652056891,
+            "name": "Coventry",
+            "odds": "1.82",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2652056895,
+            "name": "Draw",
+            "odds": "3.90",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2652056897,
+            "name": "Southampton",
+            "odds": "4.10",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2652056901,
+            "name": "1 OR X",
+            "odds": "1.25",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2652056899,
+            "name": "X OR 2",
+            "odds": "1.92",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2652056889,
+            "name": "1 OR 2",
+            "odds": "1.27",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652213077,
+            "name": "OVER 2.50",
+            "odds": "1.62",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2652213193,
+            "name": "UNDER 2.50",
+            "odds": "2.22",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2652213129,
+            "name": "YES (GG)",
+            "odds": "1.59",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2652213185,
+            "name": "NO (NG)",
+            "odds": "2.22",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8702525,
+    "home": "Flint Town Utd",
+    "away": "Bala Town",
+    "competition": "Cymru Premier",
+    "country": "Wales",
+    "kickoff": "2026-03-14T12:30:00+00:00",
+    "markets_count": 23,
+    "odds": [
+      {
+        "id": 10,
+        "specValue": 0,
+        "name": "3 Way",
+        "order": 101,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653226891,
+            "name": "Flint Town Utd",
+            "odds": "1.61",
+            "shortName": "1",
+            "specValue": 0
+          },
+          {
+            "id": 2653226897,
+            "name": "Draw",
+            "odds": "3.70",
+            "shortName": "X",
+            "specValue": 0
+          },
+          {
+            "id": 2653226907,
+            "name": "Bala Town",
+            "odds": "4.40",
+            "shortName": "2",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "specValue": 0,
+        "name": "Double Chance",
+        "order": 105,
+        "columns": 3,
+        "columnsApp": 3,
+        "selections": [
+          {
+            "id": 2653226905,
+            "name": "1 OR X",
+            "odds": "1.15",
+            "shortName": "1X",
+            "specValue": 0
+          },
+          {
+            "id": 2653226895,
+            "name": "X OR 2",
+            "odds": "1.84",
+            "shortName": "X2",
+            "specValue": 0
+          },
+          {
+            "id": 2653226889,
+            "name": "1 OR 2",
+            "odds": "1.19",
+            "shortName": "12",
+            "specValue": 0
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "specValue": 2.5,
+        "name": "Total Goals Over/Under - Full Time",
+        "order": 109,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653890845,
+            "name": "OVER 2.50",
+            "odds": "1.63",
+            "shortName": "OV",
+            "specValue": 2.5
+          },
+          {
+            "id": 2653890967,
+            "name": "UNDER 2.50",
+            "odds": "2.15",
+            "shortName": "UN",
+            "specValue": 2.5
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "specValue": 0,
+        "name": "Both Teams To Score",
+        "order": 103,
+        "columns": 2,
+        "columnsApp": 2,
+        "selections": [
+          {
+            "id": 2653890867,
+            "name": "YES (GG)",
+            "odds": "1.67",
+            "shortName": "Yes",
+            "specValue": 0
+          },
+          {
+            "id": 2653890953,
+            "name": "NO (NG)",
+            "odds": "2.00",
+            "shortName": "No",
+            "specValue": 0
+          }
+        ]
+      }
+    ]
+  }
+]

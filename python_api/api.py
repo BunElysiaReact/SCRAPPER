@@ -40,15 +40,17 @@ LOGS_DIR.mkdir(parents=True, exist_ok=True)
 # ── In-memory store ───────────────────────────────────────────────────────────
 
 store = {
-    "requests":    defaultdict(list),
-    "responses":   defaultdict(list),
-    "bodies":      defaultdict(list),
-    "auth":        defaultdict(list),
-    "cookies":     defaultdict(list),
-    "websockets":  defaultdict(list),
-    "dommaps":     defaultdict(list),
-    "storage":     defaultdict(list),       # localStorage / sessionStorage
-    "fingerprints":defaultdict(list),       # browser fingerprints
+    "requests":      defaultdict(list),
+    "responses":     defaultdict(list),
+    "bodies":        defaultdict(list),
+    "auth":          defaultdict(list),
+    "cookies":       defaultdict(list),
+    "websockets":    defaultdict(list),
+    "ws_frames":     defaultdict(list),      # ← NEW: parsed frames
+    "ws_connections":defaultdict(list),      # ← NEW: open/close/handshake
+    "dommaps":       defaultdict(list),
+    "storage":       defaultdict(list),
+    "fingerprints":  defaultdict(list),
 }
 store_lock = threading.Lock()
 
@@ -109,15 +111,17 @@ def queue_clear():
 # ── File → store key mapping ──────────────────────────────────────────────────
 
 FILE_TO_KEY = {
-    "requests.jsonl":    "requests",
-    "responses.jsonl":   "responses",
-    "bodies.jsonl":      "bodies",
-    "auth.jsonl":        "auth",
-    "cookies.jsonl":     "cookies",
-    "websockets.jsonl":  "websockets",
-    "dommaps.jsonl":     "dommaps",
-    "storage.jsonl":     "storage",
-    "fingerprints.jsonl":"fingerprints",
+    "requests.jsonl":       "requests",
+    "responses.jsonl":      "responses",
+    "bodies.jsonl":         "bodies",
+    "auth.jsonl":           "auth",
+    "cookies.jsonl":        "cookies",
+    "websockets.jsonl":     "websockets",
+    "ws_frames.jsonl":      "ws_frames",       # ← NEW
+    "ws_connections.jsonl": "ws_connections",  # ← NEW
+    "dommaps.jsonl":        "dommaps",
+    "storage.jsonl":        "storage",
+    "fingerprints.jsonl":   "fingerprints",
 }
 
 # ── Load existing data ────────────────────────────────────────────────────────
@@ -267,6 +271,140 @@ def scrape_url(url, selector, limit=50):
             try: os.unlink(tmp)
             except: pass
 
+# ── NEW: WebSocket helper functions ───────────────────────────────────────────
+
+def get_ws_frames(domain=None, flags_filter=None, limit=200, skip_heartbeat=True):
+    """Return WS frames, optionally filtered by domain, flags, excluding heartbeats."""
+    with store_lock:
+        if domain:
+            frames = list(store["ws_frames"].get(domain, []))
+        else:
+            frames = [f for v in store["ws_frames"].values() for f in v]
+
+    # Newest first
+    frames.sort(key=lambda x: x.get("timestamp", 0), reverse=True)
+
+    # Filter heartbeats (ping/pong)
+    if skip_heartbeat:
+        frames = [f for f in frames if "HEARTBEAT" not in (f.get("flags") or [])]
+
+    # Filter by specific flags
+    if flags_filter:
+        if isinstance(flags_filter, str):
+            flags_filter = [flags_filter]
+        frames = [f for f in frames if any(fl in (f.get("flags") or []) for fl in flags_filter)]
+
+    return frames[:limit]
+
+
+def get_ws_connections(domain=None, open_only=False):
+    """Return WebSocket connection lifecycle events."""
+    with store_lock:
+        if domain:
+            events = list(store["ws_connections"].get(domain, []))
+        else:
+            events = [e for v in store["ws_connections"].values() for e in v]
+
+    # Group by requestId — build connection summaries
+    conns = {}
+    for ev in events:
+        rid  = ev.get("requestId") or ev.get("request_id", "unknown")
+        t    = ev.get("type", "")
+        if rid not in conns:
+            conns[rid] = {
+                "requestId": rid,
+                "url":       ev.get("url", ""),
+                "domain":    ev.get("domain", ""),
+                "tabId":     ev.get("tabId"),
+                "openedAt":  None,
+                "closedAt":  None,
+                "handshake": None,
+                "open":      True,
+                "summary":   None,
+            }
+        if t == "websocket_opened":
+            conns[rid]["openedAt"] = ev.get("timestamp")
+            conns[rid]["url"]      = ev.get("url", conns[rid]["url"])
+        elif t == "websocket_handshake":
+            conns[rid]["handshake"] = {
+                "status":  ev.get("status"),
+                "headers": ev.get("headers", {}),
+            }
+        elif t == "websocket_closed":
+            conns[rid]["closedAt"] = ev.get("timestamp")
+            conns[rid]["open"]     = False
+            conns[rid]["summary"]  = ev.get("summary")
+
+    result = list(conns.values())
+    result.sort(key=lambda x: x.get("openedAt") or 0, reverse=True)
+
+    if open_only:
+        result = [c for c in result if c["open"]]
+
+    return result
+
+
+def get_ws_stats(domain=None):
+    """Aggregate stats across all captured WS traffic."""
+    frames = get_ws_frames(domain=domain, skip_heartbeat=False, limit=999999)
+    conns  = get_ws_connections(domain=domain)
+
+    total_recv = sum(1 for f in frames if f.get("direction") == "recv")
+    total_sent = sum(1 for f in frames if f.get("direction") == "sent")
+
+    # Flag frequency
+    flag_counts = {}
+    for f in frames:
+        for fl in (f.get("flags") or []):
+            flag_counts[fl] = flag_counts.get(fl, 0) + 1
+
+    # Collect all extracted numeric values
+    extracted_values = {}
+    for f in frames:
+        for k, v in (f.get("extracted") or {}).items():
+            if k not in extracted_values:
+                extracted_values[k] = []
+            extracted_values[k].append(v)
+
+    # Summarize numeric fields
+    value_stats = {}
+    for k, vals in extracted_values.items():
+        if vals:
+            value_stats[k] = {
+                "count": len(vals),
+                "min":   min(vals),
+                "max":   max(vals),
+                "avg":   round(sum(vals) / len(vals), 4),
+                "last":  vals[-1],
+            }
+
+    # Unique URLs seen
+    ws_urls = list({c["url"] for c in conns if c.get("url")})
+
+    return {
+        "connections": {
+            "total":  len(conns),
+            "open":   sum(1 for c in conns if c["open"]),
+            "closed": sum(1 for c in conns if not c["open"]),
+            "urls":   ws_urls,
+        },
+        "frames": {
+            "total":  len(frames),
+            "recv":   total_recv,
+            "sent":   total_sent,
+        },
+        "flags":          flag_counts,
+        "extractedValues": value_stats,
+    }
+
+
+def get_ws_interesting(domain=None, limit=100):
+    """Return only frames that matched interesting patterns — no heartbeats, no empty frames."""
+    INTERESTING = ['CRASH_POINT','MULTIPLIER','GAME_STATE','ROUND_ID','HASH',
+                   'CASHOUT','BALANCE','BET','PLAYER_DATA','RESULT','PAYOUT',
+                   'HAS_NUMBERS','BINARY_JSON']
+    return get_ws_frames(domain=domain, flags_filter=INTERESTING, limit=limit)
+
 # ── Data queries ──────────────────────────────────────────────────────────────
 
 def get_bearer_tokens(domain=None):
@@ -367,6 +505,9 @@ def export_zip(domain=None):
         else:
             # Export everything
             for fname in DATA_DIR.glob("*.jsonl"):
+                zf.write(str(fname), fname.name)
+            # Include WS-specific files
+            for fname in DATA_DIR.glob("ws_*.jsonl"):
                 zf.write(str(fname), fname.name)
             for fname in DATA_DIR.glob("html_*.json"):
                 zf.write(str(fname), fname.name)
@@ -852,6 +993,34 @@ class ScraperAPI(BaseHTTPRequestHandler):
         elif path == "/queue":
             self.send_json(queue_status())
 
+        # ── NEW: WebSocket endpoints ──────────────────────────────────────────
+        elif path == "/websockets":
+            limit  = int(qs.get("limit", [200])[0])
+            hb     = qs.get("heartbeat", ["0"])[0] == "1"
+            self.send_json(get_ws_frames(domain=domain, limit=limit, skip_heartbeat=not hb))
+
+        elif path == "/ws/frames":
+            limit  = int(qs.get("limit", [200])[0])
+            flags  = qs.get("flags", [None])[0]
+            hb     = qs.get("heartbeat", ["0"])[0] == "1"
+            self.send_json(get_ws_frames(
+                domain=domain,
+                flags_filter=flags.split(",") if flags else None,
+                limit=limit,
+                skip_heartbeat=not hb,
+            ))
+
+        elif path == "/ws/connections":
+            open_only = qs.get("open", ["0"])[0] == "1"
+            self.send_json(get_ws_connections(domain=domain, open_only=open_only))
+
+        elif path == "/ws/stats":
+            self.send_json(get_ws_stats(domain=domain))
+
+        elif path == "/ws/interesting":
+            limit = int(qs.get("limit", [100])[0])
+            self.send_json(get_ws_interesting(domain=domain, limit=limit))
+
         elif path == "/export":
             data = export_zip(domain)
             fname = f"{domain or 'all_data'}.zip"
@@ -1131,6 +1300,7 @@ if __name__ == "__main__":
     server = ThreadedHTTPServer(("0.0.0.0", API_PORT), ScraperAPI)
     print(f"[API] Dashboard → http://localhost:{API_PORT}")
     print(f"[API] Endpoints: /tokens /auth /endpoints /intel /dommaps /find /export /live")
+    print(f"[API] WebSocket endpoints: /websockets /ws/frames /ws/connections /ws/stats /ws/interesting")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
